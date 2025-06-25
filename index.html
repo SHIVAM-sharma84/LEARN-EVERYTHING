@@ -346,52 +346,40 @@
 			
 		</footer>
 
-		<script>
-    function showForm() {
-      const form = document.getElementById('feedbackForm');
-      form.style.display = form.style.display === 'block' ? 'none' : 'block';
+<script>
+  function showForm() {
+    const form = document.getElementById('feedbackForm');
+    form.style.display = form.style.display === 'block' ? 'none' : 'block';
+  }
+
+  document.getElementById("feedbackForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let valid = true;
+
+    const name = document.getElementById("name").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    document.querySelectorAll(".error").forEach(e => e.style.display = "none");
+    document.getElementById("successMsg").innerText = "";
+
+    if (name === "") {
+      document.getElementById("nameError").style.display = "block";
+      valid = false;
     }
 
-    document.getElementById("feedbackForm").addEventListener("submit", function(e) {
-      e.preventDefault();
+    if (message === "") {
+      document.getElementById("messageError").style.display = "block";
+      valid = false;
+    }
 
-      let valid = true;
+    if (valid) {
+      document.getElementById("successMsg").innerText = "Thank you for your feedback!";
+      this.submit(); // Actually submit the form to FormSubmit
+    }
+  });
+</script>
 
-      const name = document.getElementById("name").value.trim();
-      
-      const message = document.getElementById("message").value.trim();
-
-      document.querySelectorAll(".error").forEach(e => e.style.display = "none");
-      document.getElementById("successMsg").innerText = "";
-
-      if (name === "") {
-        document.getElementById("nameError").style.display = "block";
-        valid = false;
-      }
-
-      if (email === "" || !email.includes("@")) {
-        document.getElementById("emailError").style.display = "block";
-        valid = false;
-      }
-
-      if (rating === "") {
-        document.getElementById("ratingError").style.display = "block";
-        valid = false;
-      }
-
-      if (message === "") {
-        document.getElementById("messageError").style.display = "block";
-        valid = false;
-      }
-
-      if (valid) {
-        document.getElementById("successMsg").innerText = "Thank you for your feedback!";
-        document.getElementById("feedbackForm").reset();
-      }
-    });
-
-
-  </script>
 
 
 </body>
