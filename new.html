@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LEARN EVERY THING</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<style>
+	* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body
+    {
+    	background-color: black;
+    }
+	
+	header
+	{background: linear-gradient(90deg,rgba(166, 88, 153, 1) 0%, rgba(199, 87, 186, 1) 2%, rgba(44, 116, 184, 1) 71%, rgba(114, 83, 237, 1) 93%);
+		padding:20px 0px 40px 10px;
+		height: 300px ;
+		width: 100%;
+		border-radius: 0px 0px 20px 20px ;
+		background-attachment: fixed;
+		border: none;
+		box-shadow: 0px 0px 20px blueviolet;
+		font-family: Algerian;
+		color: white;
+	}
+	footer
+
+	{background: linear-gradient(90deg,rgba(166, 88, 153, 1) 0%, rgba(199, 87, 186, 1) 2%, rgba(44, 116, 184, 1) 71%, rgba(114, 83, 237, 1) 93%);
+		padding:20px 0px 40px 10px;
+		height: 280px ;
+		width: 100%;
+		border-radius: 20px 20px 0px 0px ;
+		background-attachment: fixed;
+		border: none;
+		box-shadow: 0px 0px 15px blueviolet;
+		font-family: Algerian;
+		color: white;
+
+	}
+	h1
+	{
+		padding-left: 10px;
+		font-size: 50px;
+		margin-top: 5px;
+		font-family: Algerian;
+		
+	}
+	
+	.img-1
+	{
+		width: 150px;
+		margin-left: 10px;
+	}
+	.link-1
+	{
+		text-decoration: none;
+		margin-right: 50px;
+		font-size: 22px;
+
+
+	}
+	.link-1:hover{
+		color: yellow;
+		text-decoration: underline;
+		text-decoration-style: wavy;
+
+	}
+	h2
+	{
+		text-align: center;
+		font-size: 50px;
+		font-family:Broadway;
+		color: white;
+
+	}
+	h2:hover
+	{
+		color: violet;
+		
+
+	}
+
+
+	.link-2
+	{
+		
+		font-size: 20px;
+		margin-top: 200px;
+		text-decoration: none;
+		
+		font-weight: bold;
+		transition:font-size 0.8s;
+		background-color: blanchedalmond;
+		border-radius: 20px;
+		padding: 20px;	
+			
+	}
+	.link-2:hover
+	{
+		color: violet;
+		font-size: 30px;
+	}
+
+	
+	.img-2
+	{
+		width: 300px;
+		margin-left: 120px;
+		transition: width 0.9s;
+
+	}
+	.img-2:hover
+	{
+
+		width: 400px;
+	}
+	.learn
+	{	
+		padding: 80px 150px 80px 150px;
+		width: 1000px;
+		height: 480;
+		box-shadow: 0px 0px 15px black;
+		border: none;
+		background-image: linear-gradient(to right,blueviolet,violet);
+		border-radius: 30px;
+		transition: height 2s ,width 0.8s;
+	}
+
+	.learn:hover
+	{width: 1200px;
+		height:510px;
+	}
+	button
+	{
+		background-color: violet;
+		padding: 20px 40px 20px 40px;
+		font-size: 20px;
+		font-family: Arial;
+		border: none;
+		box-shadow: 0px 0px 15px violet;
+		border-radius: 20px;
+		transition:padding 0.4s;
+	}
+	button:hover
+	{padding: 25px 45px 25px 45px;
+
+	}
+	.form-box {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      padding: 40px;
+      border-radius: 20px;
+      width: 350px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+      color: white;
+    }
+
+    .form-box h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .form-box .input-group {
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .form-box input,
+    .form-box textarea,
+    .form-box select {
+      width: 100%;
+      padding: 10px 15px;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      color: white;
+      font-size: 15px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .form-box input:focus,
+    .form-box textarea:focus {
+      background: rgba(255, 255, 255, 0.25);
+      border-color: #fff;
+    }
+
+    .form-box textarea {
+      resize: none;
+      height: 100px;
+    }
+
+    .form-box button {
+      width: 100%;
+      padding: 12px;
+      background: #00c6ff;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .form-box button:hover {
+      background: #0072ff;
+    }
+
+    .error {
+      font-size: 12px;
+      color: #ffbaba;
+      margin-top: 5px;
+      display: none;
+    }
+
+    .success-message {
+      text-align: center;
+      color: #9effc6;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+    .kim
+    {
+      box-shadow: 0px 0px 15px white;
+    }
+</style>
+<body>
+	<header id="Home">
+		<div style="text-align: right; margin-left: 10px;">
+		<a href="#Home" class="link-1">Home</a>
+		<a href="#Learn" class="link-1">Learn</a>
+		<a href="#material" class="link-1">Material</a>
+		<a href="#contact" class="link-1">Contact</a>
+    <a href="#about" class="link-1">About</a></div>
+		
+		<img src="logo_main.jpg" class="img-1"><h1>LEARN EVERY THING</h1>
+		
+		
+		
+
+	</header>
+	<main>
+	<div>
+		<h2 class="w3-card w3-animate-fading kim" id="Learn">Learn</h2>
+		<br><br>
+		<img src="https://djgeqya1wekbj.cloudfront.net/product-images/600-600/Python-Advanced-L4---1200x600.jpg.webp" class="img-2">
+		<img src="https://media.licdn.com/dms/image/v2/D5612AQGYVMn93dK4aQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1719813183657?e=2147483647&v=beta&t=fEYeCuOYWWE74ZfMbaNUkqWabqgWrh3Lb2BJoDYWm0A" class="img-2">
+		<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ9Z2_WeT006Wu_eiMKkNtKj4hZB3QvEYQTPtgqpBZzrRBNcdbq6dBsH8B-Uv2APmVk-V6yVcLOE10zUrmk0WDTjLCw3XJEWJ1HIvsjVIpglurBtVHTc5fQO8gZrkq9U6YizsipNX_Utw/s320/Class+12+%2528onlinestudywith.us%2529.JPG" class="img-2">
+		</div>
+
+		
+
+	
+		<br><br><br><br><br><br><br><br>
+    <h2 class="w3-card w3-animate-fading kim" id="material" >Matrial</h2>
+	<center><div class="learn">
+    
+		
+		<center ><a href="12class.html" class=" link-2 " target="__main">1) 12th SCIENCE</a>
+		<br><br> <br><br><br> <br>
+		<a href="https://shivam-sharma84.github.io/html/" class="link-2 " target="__main">2) HTML TUTORIAL</a> 
+		<br><br><br><br><br><br>
+		<a href="https://shivam-sharma84.github.io/Python/" class="link-2 " target="__main">3) PYTHON TUTORIAL</a> </center>
+		
+			
+
+
+		</div></center>
+		<br><br>
+
+		<div style="font-size: 35px; box-shadow: 0px 0px 15px gray;  border-radius:20px 20px 20px 20px ; height: 250px; color: white;" id="contact"><br><center>Get in Touch
+			Have questions or feedback?<br>Reach out to us!</center>
+			
+		</main>
+		<br>
+		<center><button onclick="showForm()">Feedback</button></center>
+		<br>
+		<center><div class="form-box" id="feedbackForm" style="display: none;">
+    <h2>Feedback Form</h2>
+    <form id="feedbackForm" method="POST" action="https://formsubmit.co/e428d9307a0a345b3f4d38fbcfde07a4">
+      <div class="input-group">
+        <input type="text" id="name" name="Name" placeholder="Your Name" />
+        <div class="error" id="nameError">Name is required</div>
+      </div>
+
+
+      <div class="input-group">
+        <textarea id="message" placeholder="Your Feedback..." name="Feedback"></textarea>
+        <div class="error" id="messageError" >Message is required</div>
+      </div>
+
+      <button type="submit" onclick="showAlert()" value="Submit">Submit Feedback</button>
+      <div class="success-message" id="successMsg"></div>
+    </form>
+  </div></center>
+    
+		
+			<footer style="background-color: #222; color: #fff; padding: 30px 20px; font-family: Arial, sans-serif;" id="about">
+  <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between;">
+    
+    <div style="flex: 1 1 250px; margin-bottom: 20px; font-size: 15px;">
+      <h3 style="color: #00c3ff;">Learn Everything</h3>
+      <p >Your one-stop platform for mastering coding and web development. Explore our 12 comprehensive tutorials!</p>
+    </div>
+    
+    <div style="flex: 1 1 150px; margin-bottom: 20px; margin-left: 50px;">
+      <h4>Tutorials</h4>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="https://shivam-sharma84.github.io/html/" style="color: #ccc; text-decoration: none;">HTML Tutorial</a></li>
+        <li><a href="https://shivam-sharma84.github.io/Python/" style="color: #ccc; text-decoration: none;">Python Tutorial</a></li>
+        <li><a href="#" style="color: #ccc; text-decoration: none;">CSS Tutorial</a></li>
+        <li><a href="#" style="color: #ccc; text-decoration: none;">JavaScript Tutorial</a></li>
+        
+      </ul>
+    </div>
+
+    <div style="flex: 1 1 150px; margin-bottom: 20px; margin-left: 50px;">
+      <h4>SCHOOL</h4>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="#" style="color: #ccc; text-decoration: none;">> 11</a></li>
+        <li><a href="12class.html" style="color: #ccc; text-decoration: none;">> 12</a></li>
+        
+      </ul>
+    </div>
+    <br><br>
+
+
+    
+  </div>
+
+  <div style="text-align: center; border-top: 1px solid #444; margin-top: 20px; padding-top: 10px; font-size: 14px;">
+     <p style="margin: 0;">
+    <span style="font-weight: bold; font-size: 18px;">Website crafted with ❤️ by <span style="color: #ffd700;">SHIVAM</span></span><br>
+    &copy; 2025 All Rights Reserved
+  </p>
+  </div>
+
+
+			
+		</footer>
+
+		<script>
+    function showForm() {
+      const form = document.getElementById('feedbackForm');
+      form.style.display = form.style.display === 'block' ? 'none' : 'block';
+    }
+
+    document.getElementById("feedbackForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      let valid = true;
+
+      const name = document.getElementById("name").value.trim();
+      
+      const message = document.getElementById("message").value.trim();
+
+      document.querySelectorAll(".error").forEach(e => e.style.display = "none");
+      document.getElementById("successMsg").innerText = "";
+
+      if (name === "") {
+        document.getElementById("nameError").style.display = "block";
+        valid = false;
+      }
+
+      if (email === "" || !email.includes("@")) {
+        document.getElementById("emailError").style.display = "block";
+        valid = false;
+      }
+
+      if (rating === "") {
+        document.getElementById("ratingError").style.display = "block";
+        valid = false;
+      }
+
+      if (message === "") {
+        document.getElementById("messageError").style.display = "block";
+        valid = false;
+      }
+
+      if (valid) {
+        document.getElementById("successMsg").innerText = "Thank you for your feedback!";
+        document.getElementById("feedbackForm").reset();
+      }
+    });
+
+
+  </script>
+
+
+</body>
+</html>
